@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GHG Concepts - Carbon Emission Dashboard</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+
+    <style>
+        body {
+            background: #f4f7f6;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1000px;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 0 12px rgba(0,0,0,0.15);
+        }
+
+        h1, h2, h3 {
+            color: #003c3c;
+            margin-bottom: 10px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #e9f5f2;
+            border-left: 6px solid #008080;
+            border-radius: 6px;
+        }
+
+        ul {
+            margin-top: 8px;
+        }
+
+        .scope-box {
+            background: #ffffff;
+            padding: 18px;
+            border-radius: 10px;
+            border: 1px solid #d9e6e4;
+            margin-bottom: 20px;
+        }
+
+        .scope-title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #006666;
+            margin-bottom: 10px;
+        }
+
+        .example {
+            background: #f1fcfa;
+            border-left: 4px solid #00a394;
+            padding: 10px;
+            margin-top: 8px;
+            border-radius: 6px;
+        }
+
+        .navbar {
+            width: 100%;
+            background: linear-gradient(90deg, #003c3c, #007770);
+            padding: 14px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .navbar a {
+            color: white;
+            margin: 0 25px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .navbar a:hover {
+            color: #aeeeee;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="navbar">
+    <a href="/">Home</a>
+    <a href="/dashboard">Dashboard</a>
+    <a href="/calculator">Calculator</a>
+    <a href="/concepts">GHG Concepts</a>
+</div>
+
+<div class="container">
+
+    <h1>Greenhouse Gas (GHG) Concepts</h1>
+    <p style="color:#444; font-size:16px;">
+        This page provides a simple and clear understanding of Carbon Emissions, GHG Protocols, and Scope 1, 2, and 3 categories used in corporate emission tracking.
+    </p>
+
+    <!-- Section 1 -->
+    <div class="section">
+        <h2>What is Carbon Emission?</h2>
+        <p>
+            Carbon emissions refer to the release of greenhouse gases (GHGs) such as CO₂, CH₄, N₂O into the atmosphere. 
+            These gases trap heat and contribute to climate change. Industries, transportation, fuel consumption, electricity use, and waste management all generate emissions.
+        </p>
+    </div>
+
+    <!-- Section 2 -->
+    <div class="section">
+        <h2>What is the GHG Protocol?</h2>
+        <p>
+            The GHG Protocol is the world's most widely used standard for measuring, managing, and reporting greenhouse gas emissions. 
+            It divides emissions into three main categories:
+        </p>
+        <ul>
+            <li><b>Scope 1 – Direct Emissions</b></li>
+            <li><b>Scope 2 – Indirect Emissions (Purchased Energy)</b></li>
+            <li><b>Scope 3 – Other Indirect Emissions</b></li>
+        </ul>
+    </div>
+
+    <!-- Scope 1 -->
+    <div class="scope-box">
+        <div class="scope-title">Scope 1 – Direct Emissions</div>
+        <p>Emissions released from sources that are directly owned or controlled by the company.</p>
+
+        <div class="example">
+            <b>Examples:</b>
+            <ul>
+                <li>Diesel consumed by company-owned vehicles</li>
+                <li>Fuel used in DG sets and heavy machinery (HEMV, drills, pumps)</li>
+                <li>LPG used in the canteen or inside company premises</li>
+                <li>Fugitive emissions from AC refrigerant leakage (R32/R410 gases)</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Scope 2 -->
+    <div class="scope-box">
+        <div class="scope-title">Scope 2 – Indirect Emissions from Purchased Energy</div>
+        <p>Emissions from electricity, steam, heat, or cooling purchased from outside sources.</p>
+
+        <div class="example">
+            <b>Examples:</b>
+            <ul>
+                <li>Electricity consumed in offices, processing plants, lighting, workshops</li>
+                <li>Energy used in water treatment plants or mining operations</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Scope 3 -->
+    <div class="scope-box">
+        <div class="scope-title">Scope 3 – Other Indirect Emissions</div>
+        <p>Emissions that occur from activities not directly controlled by the company but related to operations.</p>
+
+        <div class="example">
+            <b>Examples:</b>
+            <ul>
+                <li>Employee commuting (two-wheelers, buses, cars)</li>
+                <li>Business travel (flights, trains, taxis)</li>
+                <li>Transportation of raw materials and finished products</li>
+                <li>Waste disposal (tyres, lubricants, batteries)</li>
+                <li>Purchased goods (steel, tyres, PVC boxes, lubricants)</li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

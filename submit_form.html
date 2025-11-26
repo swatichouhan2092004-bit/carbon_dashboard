@@ -1,0 +1,22 @@
+<!-- templates/submitform.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Carbon Calculator</title>
+</head>
+<body>
+    <h2>Carbon Emission Calculator</h2>
+    <form action="/calculate_emission" method="post">
+        <label>Energy Usage:</label><br>
+        <input type="range" name="energy" min="0" max="100"><br><br>
+
+        <label>Transport Usage:</label><br>
+        <input type="range" name="transport" min="0" max="100"><br><br>
+
+        <label>Waste Generation:</label><br>
+        <input type="range" name="waste" min="0" max="100"><br><br>
+
+        <input type="submit" value="Calculate Emission">
+    </form>
+</body>
+</html>
